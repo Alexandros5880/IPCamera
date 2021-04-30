@@ -18,6 +18,7 @@ namespace IPCamera
             {
                 try
                 {
+                    Console.WriteLine("first_run.txt EXISTS.");
                     String file = $"{GetRootDir()}\\first_run.txt";
                     if (File.Exists(file))
                     {
@@ -36,7 +37,7 @@ namespace IPCamera
                     }
                     else
                     {
-                        Console.WriteLine("File NOT EXISTS.");
+                        Console.WriteLine("first_run.txt NOT EXISTS.");
                         first_time_runs = true;
                         return first_time_runs;
                     }
